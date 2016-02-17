@@ -1,0 +1,48 @@
+{
+  "expense" : "Expenses",
+  "income" : "Incomes",
+  "profit" : "Profit",
+
+  "statistic_page_title" : "Spender - Dashboard",
+  "graph_page_title" : "Spender - Graph",
+
+  "logo_title": "Spender",
+  "change_password": "Change password",
+  "logout" : "Exit",
+  "page_statistic_name" : "Statistics",
+  "page_graph_name" : "Graph",
+  "period" : "Period",
+  "period_from" : "From",
+  "period_to" : "To",
+  "short_info_title" : "Statistics",
+  "diagram_cost_title" : "Expenses",
+  "diagram_income_title" : "Income",
+  "large_info_title" : "Large spending",
+ 
+  "pass_no_match" : "Passwords do not match",
+  "pass_change_success" : "Password successfully changed!",
+  "current_pass" : "Current Password",
+  "new_pass" : "New Password",
+  "repeat_pass" : "Repeat new password",
+  "save" : "Save",
+  "close" : "Close",
+  "set_form" : "Please complete the form",
+  "per_day" : "per day",
+  "per_month" : "per month",
+
+  "lang_days" : [ "Mo","Tu", "We", "Th", "Fr", "Sa", "Su" ],
+  "lang_month" : [ "Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec" ],
+  "lang_month_full" : [ "jan", "feb", "mar", "apr", "may", "jun", "jul", "aug", "sep", "oct", "nov", "dec" ],
+
+  "category" : "Category",
+  "all_category" : "All categories",
+  "all_category_short" : "All",
+
+  "incorrect_password" : "Incorrect password",
+  "old_pass_require" : "Old password required",
+  "email_font_found" : "Email not found",
+  "email_require" : "Email required",
+  "email_forgot_title" : "Spender: Password recovery",
+  "email_app_title" : "Spender - Personal Finance Manager",
+  "email_your_password" : "Your password:"
+}

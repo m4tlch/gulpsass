@@ -1,0 +1,9 @@
+@import "main";
+body {
+  display: flex;
+  filter: grayscale(#666);
+  background: grey;
+  h1 {
+    color: black;
+  }
+}

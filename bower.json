@@ -1,0 +1,22 @@
+{
+  "name": "prius",
+  "version": "1.0.0",
+  "authors": [
+    "David Calcus <targoo@gmail.com>"
+  ],
+  "description": "Prius bower",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.7",
+    "breakpoint-sass": "~2.6.1",
+    "compass-mixins": "~1.0.2",
+    "libsass-compass-vertical-rhythm": "~1.0.0"
+  }
+}
