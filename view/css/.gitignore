@@ -9,4 +9,5 @@ coverage
 .idea
 sandbox
 .sass-cache
+*.css
 gulp.1

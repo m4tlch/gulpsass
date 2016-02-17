@@ -8,7 +8,6 @@ var concat = require('gulp-concat');
 var watch = require('gulp-watch');
 var batch = require('gulp-batch');
 var compass = require('gulp-compass');
-var rename = require('gulp-rename');
 
 var basePaths = {
     src: './',
@@ -66,12 +65,10 @@ var vendorFiles = {
 /*Если gulp запущен с ключом --prod - то и за стилями и за скриптами с сжатием, иначе - одни стили, в compact режиме*/
 var sassStyle = 'compact';
 var assets_target = [paths.styles.dest];
-var style_suffix = '.min';
 
 if (gutil.env.prod === true) {
     sassStyle = 'compressed';
     assets_target = [paths.styles.dest, paths.scripts.dest];
-    style_suffix = '.min';
 }
 
 gulp.task('styles', function () {
@@ -99,7 +96,6 @@ gulp.task('styles', function () {
             this.emit('end');
         })
         .pipe(autoprefixer('last 2 version', 'safari 5', 'ie 7', 'ie 8', 'ie 9', 'opera 12.1', 'ios 6', 'android 4'))
-        .pipe(rename({suffix: style_suffix}))
         .pipe(gulp.dest(paths.styles.dest))
         .pipe(livereload());
 
