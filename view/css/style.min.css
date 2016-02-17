@@ -1,7 +1,0 @@
-/* line 2, ../scss/_main.scss */
-body p { color: black; text-transform: uppercase; }
-
-/* line 2, ../scss/style.scss */
-body { display: -webkit-flex; display: -ms-flexbox; display: flex; -webkit-filter: #666666; filter: #666666; background: grey; }
-/* line 6, ../scss/style.scss */
-body h1 { color: black; }
