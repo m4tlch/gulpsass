@@ -30,7 +30,6 @@ var assets_path = {
     styles_source: 'view/scss/',
     styles_destination: 'view/css/',
 
-    sprites: 'view/sprite/*',
     fonts: 'view/fonts/'
 };
 
@@ -45,9 +44,6 @@ var paths = {
     styles: {
         src: basePaths.src + assets_path.styles_source,
         dest: basePaths.dest + assets_path.styles_destination
-    },
-    sprite: {
-        src: basePaths.src + assets_path.sprites
     }
 };
 
@@ -56,16 +52,14 @@ var appFiles = {
     scripts: [paths.scripts.src + '**/*.js']
 };
 
-var vendorFiles = {
-    styles: '',
-    scripts: ''
-};
 
 /*Если gulp запущен с ключом --prod - то и за стилями и за скриптами с сжатием, иначе - одни стили, в compact режиме*/
 var sassStyle = 'compact';
+var isProduction = false;
 var assets_target = [paths.styles.dest];
 
 if (gutil.env.prod === true) {
+	isProduction = true;
     sassStyle = 'compressed';
     assets_target = [paths.styles.dest, paths.scripts.dest];
 }
@@ -86,7 +80,6 @@ gulp.task('styles', function () {
             //time: 'false',
             //debug: 'false',
             //environment: 'development',
-            //config_file: 'config.rb',
             require: ['susy']
         }))
         .on('error', function (error) {
@@ -112,7 +105,7 @@ gulp.task('watch', function () {
     livereload.listen();
 
     gulp.watch(appFiles.styles, ['styles']);
-    gulp.watch(appFiles.scripts, ['scripts']);
+     // gulp.watch(appFiles.scripts, ['scripts']);      //Включить, если надо обновление скриптов
     gulp.watch(assets_target, function (files) {
         livereload.changed(files)
     });
