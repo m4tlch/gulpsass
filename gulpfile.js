@@ -6,7 +6,6 @@ var autoprefixer = require('gulp-autoprefixer');
 var gutil = require('gulp-util');
 var concat = require('gulp-concat');
 var watch = require('gulp-watch');
-var batch = require('gulp-batch');
 var compass = require('gulp-compass');
 
 var basePaths = {
@@ -32,7 +31,7 @@ var assets_path = {
     styles_destination: 'view/css/',
 
     sprites: 'view/sprite/*',
-    fonts: 'view/fonts'
+    fonts: 'view/fonts/'
 };
 
 var paths = {
